@@ -1,1 +1,163 @@
-# projecct-web-ecommerce
+# project1-web-ecommerce
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>REDGEAR</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body { font-family: 'Segoe UI', sans-serif; }
+
+/* Navbar */
+.navbar-brand { color: #e60023 !important; font-weight: bold; }
+
+/* Hero */
+.hero {
+  height: 90vh;
+  background: url('gbr/hero.jpg') center/cover no-repeat;
+  position: relative;
+}
+.hero-overlay {
+  position:absolute; width:100%; height:100%;
+  background: rgba(230,0,35,0.6);
+}
+.hero-content { position:relative; z-index:2; }
+
+/* Button */
+.btn-red {
+  background:#e60023; color:white;
+}
+.btn-red:hover { background:#cc001f; }
+
+/* Product */
+.card { border:none; border-radius:15px; overflow:hidden; }
+.card img { height:200px; object-fit:cover; }
+.card:hover {
+  transform: translateY(-8px);
+  transition:0.3s;
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Footer */
+footer { background:#0d1b2a; color:white; padding:20px; text-align:center; }
+</style>
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-white shadow-sm">
+<div class="container">
+<a class="navbar-brand" href="#">REDGEAR</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+<ul class="navbar-nav ms-auto me-3">
+<li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="product.html">Product</a></li>
+<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+</ul>
+
+<a href="#" class="btn btn-outline-danger">Login</a>
+</div>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero d-flex align-items-center text-white text-center">
+<div class="hero-overlay"></div>
+
+<div class="container hero-content">
+<h1 class="fw-bold display-4">
+Gaya Mewah,<br>
+Harga <span class="text-warning">Terjangkau.</span>
+</h1>
+
+<p class="mt-3">
+Dapatkan koleksi eksklusif kami yang dirancang khusus untuk
+kenyamanan dan kepercayaan diri Anda setiap hari.
+</p>
+
+<a href="product.html" class="btn btn-red mt-3">Mulai Belanja</a>
+</div>
+</section>
+
+<!-- PRODUCT -->
+<section class="py-5 bg-light">
+<div class="container text-center">
+
+<h2 class="fw-bold">Koleksi Terlaris</h2>
+<p class="text-muted">Produk pilihan terbaik minggu ini hanya untuk Anda.</p>
+
+<div class="row mt-4">
+
+<!-- 1 -->
+<div class="col-md-3 mb-4">
+<div class="card">
+<img src="gbr/product1.jpg">
+<div class="card-body">
+<small class="text-danger">SEPATU</small>
+<h6>Nike Air Max Red</h6>
+<p class="fw-bold">Rp 1.850.000</p>
+</div>
+</div>
+</div>
+
+<!-- 2 -->
+<div class="col-md-3 mb-4">
+<div class="card">
+<img src="gbr/product2.jpg">
+<div class="card-body">
+<small class="text-danger">KAMERA</small>
+<h6>Classic Red DSLR</h6>
+<p class="fw-bold">Rp 12.500.000</p>
+</div>
+</div>
+</div>
+
+<!-- 3 -->
+<div class="col-md-3 mb-4">
+<div class="card">
+<img src="gbr/product3.jpg">
+<div class="card-body">
+<small class="text-danger">JAM TANGAN</small>
+<h6>Smartwatch Elite</h6>
+<p class="fw-bold">Rp 3.200.000</p>
+</div>
+</div>
+</div>
+
+<!-- 4 -->
+<div class="col-md-3 mb-4">
+<div class="card">
+<img src="gbr/product4.jpg">
+<div class="card-body">
+<small class="text-danger">AKSESORIS</small>
+<h6>Red Rayban Glasses</h6>
+<p class="fw-bold">Rp 2.150.000</p>
+</div>
+</div>
+</div>
+
+</div>
+
+<a href="product.html" class="btn btn-dark mt-3">Lihat Produk Lainnya →</a>
+
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+© 2026 REDGEAR. Seluruh Hak Cipta Dilindungi.
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
